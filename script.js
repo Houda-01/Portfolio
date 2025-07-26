@@ -1,11 +1,8 @@
-function myMenuFunction(){
-    var menuBth= document.getElementById("myNavMenu");
-    if(menuBth.className === "nav-menu"){
-        menuBth.className += "responsive";
-    }else {
-        menuBth.className ="nav-menu";
-    }
+function myMenuFunction() {
+  const menu = document.getElementById("myNavMenu");
+  menu.classList.toggle("responsive");
 }
+ 
 
 
 /*------Dark mode-------*/
@@ -90,3 +87,13 @@ function scrollActive(){
 }
 
 window.addEventListener("scroll", scrollActive);
+
+// Fermer le menu mobile après clic sur un lien
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+    const menu = document.getElementById("myNavMenu");
+    if (menu.classList.contains("responsive")) {
+      menu.classList.remove("responsive");
+    }
+  });
+});
