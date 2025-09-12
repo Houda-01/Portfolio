@@ -6,12 +6,18 @@ function myMenuFunction() {
 
 
 /*------Dark mode-------*/
+/*------Dark mode-------*/
 const body = document.querySelector("body"),
-    toggleSwitch = document.getElementById("toogle-switch");
+      toggleSwitch = document.getElementById("toogle-switch");
 
+// Forcer le dark mode au premier chargement
+body.classList.add("dark");
+
+// Toggle dark/light mode au clic
 toggleSwitch.addEventListener("click", ()=>{ 
     body.classList.toggle("dark");
 });
+
 
 /*------Typing effect-------*/
 var typingEffect = new Typed(".typedText", {

@@ -1,34 +1,138 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Festival Cultures Urbaines - Case Study</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival des Cultures Urbaines - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="case-study">
-    <h1>Festival Cultures Urbaines</h1>
-    <img src="festival_pre.png" alt="Festival Cultures Urbaines" class="project-image">
+    <div class="container">
+        <!-- Navbar identique à index.html -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p>Nour</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav_list"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav_list"><a href="index.html#Projects" class="nav-link active-link">Projects</a></li>
+                    <li class="nav_list"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mode">
+                <div class="moon-sun" id="toogle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
 
-    <h2>Contexte</h2>
-    <p>Ce projet consistait à concevoir l’identité digitale d’un festival ...</p>
+        <!-- Main Project Content -->
+        <main class="wrapper">
+            <section class="section" style="padding-top: 120px;">
+                <div class="top-header">
+                    <h1>Festival des Cultures Urbaines</h1>
+                    <p style="margin-top: 30px;">
+                       This project is a redesign of the <a href="http://www.festivaldesculturesurbaines.fr/page/public/Default.aspx" style="color: white;"><b><i>Festival des Cultures Urbaines website</i></b></a>. It aims to modernize the user experience and visual identity while keeping the vibrant spirit of urban culture. The new design features a clean layout, improved navigation, and an engaging UI inspired by street art and modern aesthetics.
+                    </p>
 
-    <h2>Rôle</h2>
-    <p>Chef de projet + UX Designer : coordination, wireframes, planning ...</p>
+                    <a href="index.html" class="btn" style="margin-top: 30px;">← Back to Portfolio</a>
+                    <a href="https://www.figma.com/proto/bAy6DkiiALT9nQ6cCREy7h/Festivale-des-cultures-urbaines" target="_blank" class="btn" style="margin-top: 30px;">View Prototype on Figma</a>
+                </div>
+            </section>
+            
 
-    <h2>Méthodes & Outils</h2>
-    <ul>
-      <li>Agile Scrum</li>
-      <li>Figma, Trello, GitHub</li>
-    </ul>
+          <!-- Moodboard, Logo & Persona -->
+<section class="section" >
+    <h2>Moodboard, Logo & Persona</h2>
+    <div class="portfolio-grid">
+        <!-- Moodboard -->
+        <div class="project-card">
+            <img src="moodboard.png" alt="Moodboard">
+            <div class="overlay"><h3>Moodboard</h3></div>
+        </div>
 
-    <h2>Livrables</h2>
-    <p>Maquettes interactives, planning, charte graphique...</p>
 
-    <h2>Résultats</h2>
-    <p>Amélioration de l’expérience utilisateur, prototype validé par le client...</p>
+        <!-- Persona -->
+        <div class="project-card">
+            <img src="personna.png" alt="Persona">
+            <div class="overlay"><h3>Persona</h3></div>
+        </div>
 
-    <a href="Projects.html" class="btn">⬅ Retour aux projets</a>
-  </main>
+        <!-- Logo -->
+        <div class="project-card">
+            <img src="brainboard.png" alt="Logo Concept">
+            <div class="overlay"><h3>Logo Concept</h3></div>
+        </div>
+
+    </div>
+
+    <!-- Petite description du persona -->
+    <p style="margin-top:20px; text-align:center; max-width:800px; margin-left:auto; margin-right:auto;">
+        For this project, I started by creating a <strong>moodboard</strong> to define the visual identity of the festival, 
+        including the color palette, typography, graphic styles, and street art inspirations. <br><br>
+        Then, I designed the <strong>logo</strong>, drawing from the moodboard elements to ensure visual coherence 
+        and convey the energy and dynamism of the festival. <br><br>
+        Finally, I developed a <strong>persona</strong> to better understand the target audience, their goals, 
+        needs, and frustrations, which guided the design choices throughout the project. <br><br>
+        This frame combines all three elements to show how the overall identity was thought out in an integrated way, 
+        from the initial concept to the final graphic representation.
+</section>
+
+
+            <!-- UI Mockups -->
+            <section class="section">
+                <h2>UI Mockups & Screens</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card">
+                        <img src="festival1.png" alt="Homepage design festival">
+                        <div class="overlay"><h3>Home page</h3></div>
+                    </div>
+                    <div class="project-card">
+                        <img src="festival2.png" alt="Event section design festival">
+                        <div class="overlay"><h3>Event page</h3></div>
+                    </div>
+                    <div class="project-card">
+                        <img src="festival3.png" alt="Artist details design festival">
+                        <div class="overlay"><h3>Artist details</h3></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer identique à index.html -->
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list"><a href="index.html">Home</a></li>
+                    <li class="footer_menu_list"><a href="index.html#about">About</a></li>
+                    <li class="footer_menu_list"><a href="index.html#Projects">Projects</a></li>
+                    <li class="footer_menu_list"><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon_circle_footer">
+                    <div class="icon"><a href=""><i class="uil uil-instagram"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/taleb-nour-el-houda-7548b6290/"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <div class="icon"><a href="https://github.com/HoudaTaleb"><i class="uil uil-github-alt"></i></a></div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="index.html" style="color: rgb(71, 151, 255);">By Houda</a> - All rights reserved 2024</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive-nav.js/1.0.39/responsive-nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

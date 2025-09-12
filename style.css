@@ -82,12 +82,14 @@ nav {
   letter-spacing: 2px;
   color: rgb(71, 151, 255); /* même bleu que ton thème */
   text-transform: uppercase;
+  padding-left: 20px;
 }
 
 .nav-menu, 
 .nav_menu_list{
     display: flex;
     list-style: none;
+    padding-left: 100px;
 
 }
 .nav-menu .nav_list{
@@ -322,7 +324,7 @@ i {
 /*----main---*/
 
 .section{
-    padding-block:  5em;
+    padding-block:  1em;
 }
 .row {
     display : flex;
