@@ -187,6 +187,7 @@ body.dark #moon{
     font-weight: 500;
     margin-bottom: -20px;
     color: var(--text-color);
+    padding-top: 60px;
 }
 .featured-name{
     font-size: 50px;
@@ -198,7 +199,7 @@ body.dark #moon{
 .typedText{
     font-family: sans-serif;
     color: rgb(71, 151, 255);
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -300,7 +301,7 @@ i {
     width: 100%;
 }
 .image{
-    margin-top: 40%;
+    margin-top: 30%;
     margin-left: 30%;
     width: 500px;
     height: 700px;
@@ -552,6 +553,33 @@ i {
 
 .top-header span{
     color: var(--text-color);
+}
+
+
+
+
+
+.case-study {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.case-study h1, 
+.case-study h2 {
+  color: var(--text-color);
+  margin-top: 20px;
+}
+
+.case-study ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.case-study .btn {
+  margin-top: 30px;
+  display: inline-block;
 }
 
 
@@ -873,7 +901,7 @@ a.btn:hover {
       font-size: 40px;
   }
   .typedText {
-      font-size: 48px;
+      font-size: 40px;
       text-align: center;
   }
     .socical_icons{
@@ -940,4 +968,7 @@ a.btn:hover {
     .mode{
         margin-left: 50%;
     }
+    .typedText {
+    font-size: 24px;
+  }
 }
