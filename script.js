@@ -22,8 +22,7 @@ toggleSwitch.addEventListener("click", ()=>{
 /*------Typing effect-------*/
 var typingEffect = new Typed(".typedText", {
     strings: ["Digital Project Manager",
-        "UI/UX Designer",
-        "Web Developer"],
+        ],
 
     loop: true,
     tyoeSpeed: 200,
