@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nour - Project Manager</title>
+    <title>Nour Taleb | Web Designer & Website Creator</title>
+    <meta name="description" content="Nour Taleb — Web Designer spécialisée dans la création de sites web, les maquettes UI/UX, le prototypage Figma, l'intégration front-end et la communication digitale.">
+    <link rel="icon" type="image/png" href="logo-h.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
     <!---Nav menu-->
     <div class="container">
         <nav id="header">
             <div class="nav-logo">
-                <p>Nour</p>
+                <img src="logo-h.png" alt="Nour Taleb logo" class="logo-mark">
+                <p>Nour<span>.</span></p>
             </div>
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                    <li class="nav_list">
-                      <a href="#home" class="nav-link active-link">Home</a>
+                      <a href="#home" class="nav-link active-link" data-i18n="nav.home">Accueil</a>
                       <div class="circle"></div>
                    </li>
                    <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">À propos</a>
                     <div class="circle"></div>
                  </li>
                  <li class="nav_list">
-                    <a href="#Projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a>
                     <div class="circle"></div>
                  </li>
                  <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#Projects" class="nav-link" data-i18n="nav.projects">Projets</a>
+                    <div class="circle"></div>
+                 </li>
+                 <li class="nav_list">
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
                     <div class="circle"></div>
                  </li>
                 </ul>
             </div>
-            <!---Dark mode-->
+            <!---Dark mode + Language-->
             <div class="mode">
+                <div class="lang-switch">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
                 <div class="moon-sun" id="toogle-switch">
                     <i class="fa fa-moon" id="moon"></i>
                     <i class="fa fa-sun" id="sun"></i>
@@ -49,227 +61,309 @@
         <!---main-->
         <main class="wrapper">
             <section class="featured-box" id="home">
+                <div class="hero-bg-shapes">
+                    <div class="blob blob-1"></div>
+                    <div class="blob blob-2"></div>
+                </div>
                 <div class="featured-text">
-                    <div class="hello">
-                        <p>Hello I,m</p>
-                    </div>
-                    <div class="featured-name">
-                        <span class="typedText"></span>
-                    </div>
+                   <!--- <div class="badge-pill"><span class="dot"></span> <span data-i18n="hero.badge">Ouverte aux missions freelance et aux stages</span></div>-->
+                    <h1 class="hero-title" data-i18n="hero.title">Nour</h1>
+                    <div class="hero-role"><span data-i18n="hero.role_prefix">Je conçois et je crée</span> <span class="typedText"></span></div>
                     <div class="text-info">
-                        <p>Looking for someone who can lead, organize, and deliver impactful digital projects from idea to execution? Let’s create experiences that connect and inspire.</p>
+                        <p data-i18n="hero.info">Je crée des sites web modernes et responsives, des maquettes UI/UX et des contenus digitaux qui transforment des idées en expériences en ligne claires et engageantes — du premier wireframe à la dernière ligne de code.</p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-chip"><i class="fa-solid fa-code"></i> HTML · CSS · JavaScript</div>
+                        <div class="stat-chip"><i class="fa-brands fa-figma"></i> UI/UX & Figma</div>
+                        <div class="stat-chip"><i class="fa-solid fa-bullhorn"></i> <span data-i18n="hero.stat3">Branding & Contenu</span></div>
                     </div>
                     <div class="text-btn">
-                        <button class="btn hire-btn "><a href="#contact" style="text-decoration: none; color: #fff;">Contact infos</a></button>
-                        <button class="btn"><a href="Curriculum-vitea_TALEB_Nour-El-Houda.pdf" style="text-decoration: none; color: #fff;">Download CV</a></button>
+                        <button class="btn hire-btn"><a href="#contact" style="text-decoration: none; color: #fff;"><i class="uil uil-message"></i><span data-i18n="hero.contact_btn">Me contacter</span></a></button>
+                        <button class="btn btn-outline"><a href="Curriculum-vitea_TALEB_Nour-El-Houda.pdf" style="text-decoration: none; color: inherit;" data-i18n="hero.cv_btn">Télécharger le CV</a></button>
                     </div>
                     <div class="socical_icons">
-                        <div class="icon_circle"></div>
-                        <div class="icon"><a href=""><i class="uil uil-instagram"></i></a></div>
                         <div class="icon"><a href="https://www.linkedin.com/in/taleb-nour-el-houda-7548b6290/"><i class="uil uil-linkedin-alt"></i></a></div>
                         <div class="icon"><a href="https://github.com/HoudaTaleb"><i class="uil uil-github-alt"></i></a></div>
-                        <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                        <div class="icon"><a href="mailto:talebnourelhouda22@gmail.com"><i class="uil uil-envelope"></i></a></div>
                     </div>
                 </div>
                 <div class="featured-image">
-                    <div class="image">
-                       
-                        <blockquote style="font-size: 22px; font-style: italic; color: #4797ff;">
-                            “The only way to do great work is to love what you do.”  
-                            <br><span style="font-size: 14px; color: #777;">– Steve Jobs</span>
-                        </blockquote>
+                    <div class="hero-photo-frame">
+                        <img src="hero-workspace.jpg" alt="Écran d'ordinateur portable affichant du code dans un espace de travail de web design" class="hero-photo">
+                        <div class="floating-badge badge-1"><i class="fa-solid fa-palette"></i> Web Design</div>
+                        <div class="floating-badge badge-2"><i class="fa-solid fa-code"></i> Front-End</div>
+                        <div class="floating-badge badge-3"><i class="fa-brands fa-figma"></i> UI/UX</div>
+                    </div>
+                </div>
+                <div class="scroll-indicator"><span></span><span data-i18n="hero.scroll">Défiler</span></div>
+            </section>
 
+            <!---services box-->
+            <section class="section services-section" id="services">
+                <div class="top-header">
+                    <span class="section-tag" data-i18n="services.tag">Ce que je fais</span>
+                    <h1 data-i18n-html="services.heading">Transformer des idées en <span class="gradient-text">sites qui marquent</span></h1>
+                    <span class="section-subtitle" data-i18n="services.subtitle">Un mélange de web design, d'intégration front-end et de communication digitale.</span>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-display"></i></div>
+                        <h3 data-i18n="services.card1.title">Conception & Développement de Sites Web</h3>
+                        <p data-i18n="services.card1.desc">Je conçois et développe des sites web et des landing pages responsives, en combinant une interface soignée avec une intégration HTML, CSS et JavaScript solide.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-brands fa-figma"></i></div>
+                        <h3 data-i18n="services.card2.title">Maquettes UI/UX & Prototypage</h3>
+                        <p data-i18n="services.card2.desc">Du wireframe au prototype interactif, je conçois des interfaces intuitives sur Figma, pensées autour des besoins réels des utilisateurs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        <h3 data-i18n="services.card3.title">Branding & Communication</h3>
+                        <p data-i18n="services.card3.desc">Je crée des identités visuelles, des moodboards et des visuels de communication qui donnent aux marques une image cohérente et mémorable.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3 data-i18n="services.card4.title">Contenu Digital & Coordination de Projet</h3>
+                        <p data-i18n="services.card4.desc">Je gère le contenu, les données produits via des outils CMS/PIM et le suivi de projet, pour garder chaque projet web organisé du brief à la livraison.</p>
                     </div>
                 </div>
             </section>
+
             <!---about box-->
             <section class="section" id="about">
                 <div class="top-header">
-                    <h1>About me</h1>
+                    <span class="section-tag" data-i18n="about.tag">À propos de moi</span>
+                    <h1 data-i18n-html="about.heading">La personne derrière les <span class="gradient-text">pixels & le code</span></h1>
                 </div>
                 <div class="row">
                      <div class="col">
                         <div class="about-info">
                             <figure class="about-me">
                                 <figcaption>
-                                    <!---<img src="photo.png" alt="" class="profile"/>-->
-                                    <h2>Digital Project Manager</h2>
-                                    <p>
-I am currently pursuing a Master’s degree in Multimedia Products and Services after completing a Bachelor’s degree in Computer Science at the University of La Rochelle.
+                                    <h2 data-i18n="about.card1.title">Web Designer & Créatrice Digitale</h2>
+                                    <p data-i18n-html="about.card1.text">
+Je conçois et développe des sites web et des expériences digitales modernes — des maquettes UI/UX à l'intégration front-end. Mon parcours mêle développement web, design visuel et communication digitale, façonné par des projets académiques et une expérience concrète en agence.
 </br></br>
-
-My background combines web development, UX/UI design, and digital project coordination. Through academic and professional experiences, I have worked on web and digital projects involving content management, agile collaboration, functional testing, and coordination between different teams.
-</br></br>
-
-During my current end-of-studies internship in a digital agency, I contribute to project follow-up, CMS/PIM content management, product data integration, functional testing, and communication with designers, developers, suppliers, and clients.
-</br></br>
-
-I am particularly interested in digital project management, user experience, and collaborative workflows. My goal is to grow within a digital environment where I can contribute to meaningful projects while continuing to develop my skills in project coordination and digital strategy.
+Mon objectif est de continuer à grandir en tant que web designer et créatrice de sites, en concevant des sites, interfaces et contenus visuels qui allient un design fort, une intégration propre et un impact réel — tout en gardant les compétences en organisation, collaboration agile et communication client que j'ai développées en chemin.
 </p>
+                                </figcaption>
                             </figure>
-                            <button class="about-me-btn"><a href="mailto:talebnourelhouda22@gmail.com" style="text-decoration: none; color: #fff;">Hire Me</a></button>
+                            <button class="about-me-btn"><a href="mailto:talebnourelhouda22@gmail.com" style="text-decoration: none; color: #fff;" data-i18n="about.hire_btn">Me recruter</a></button>
                         </div>
                      </div>
-                     <div class="skill">
-                        <div class="technical-skill"><h3>Digital & Project Skills</h3>
-                        <div class="skill-box">
-                            <span class="title">Project Management: Agile methodology (Scrum, Kanban)</span>
-                            <div class="skill-bar">
-                                <span class="skill-per figma">
-                                </span>
+                     <div class="col">
+                        <div class="about-info">
+                            <h3 data-i18n="about.journey">Mon parcours</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="timeline-date" data-i18n="about.t1.date">Licence</span>
+                                    <h4 data-i18n="about.t1.title">Systèmes d'Information</h4>
+                                    <p data-i18n="about.t1.desc">De nombreux projets web académiques couvrant tout le cycle de création d'un site : analyse des besoins, conception UI, intégration front-end et tests.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-date" data-i18n="about.t2.date">Master</span>
+                                    <h4 data-i18n="about.t2.title">Produits et Services Multimédia</h4>
+                                    <p data-i18n="about.t2.desc">Des projets combinant communication digitale, identité visuelle et design web/UI.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-date" data-i18n="about.t3.date">Actuellement</span>
+                                    <h4 data-i18n="about.t3.title">Stage en Gestion de Projet Digital — Reflet Communication</h4>
+                                    <p data-i18n="about.t3.desc">Suivi de projets, création de fiches produits et de contenus, intégration PIM/CMS et gestion des demandes clients au sein d'une agence digitale — une vision concrète du cycle de vie complet d'un projet web.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-box">
-                            <span class="title">Project Tools: Jira, Confluence, Notion, Slack, Google Workspace</span>
-                            <div class="skill-bar">
-                                <span class="skill-per figma">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Team Collaboration: Communication, adaptability, task organization</span>
-                            <div class="skill-bar">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Web Development Languages: HTML, CSS, JavaScript</span>
-                            <div class="skill-bar">
-                                <span class="skill-per figma">   
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Design tools: Figma (UI/UX), Canva (visual content creation)</span>
-                            <div class="skill-bar html">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Digital content creation: Wireframes, mockups, social media visuals, presentations</span>
-                            <div class="skill-bar css">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        
-    
-                        <div class="skill-box">
-                            <span class="title">Database Management: SQL, basic administration and queries</span>
-                            <div class="skill-bar sql">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                    </div></br></br>
-                        <div class="personal-skill"><h3>Personal Abilities</h3>
-                        <div class="skill-box">
-                            <span class="title">Adaptability</span>
-                            <div class="skill-bar sql">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Autonomy & Initiative</span>
-                            <div class="skill-bar sql">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Communication & Teamwork</span>
-                            <div class="skill-bar sql">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Creativity & Problem Solving</span>
-                            <div class="skill-bar sql">
-                                <span class="skill-per">
-                                </span>
-                            </div>
-                        </div>
-                        </div>
-                        
                      </div>
                 </div>
             </section>
+
+            <!---skills box-->
+            <section class="section" id="skills">
+                <div class="top-header">
+                    <span class="section-tag" data-i18n="skills.tag">Compétences</span>
+                    <h1 data-i18n-html="skills.heading">Ma <span class="gradient-text">boîte à outils</span></h1>
+                    <span class="section-subtitle" data-i18n="skills.subtitle">La création web au cœur, appuyée par l'organisation et la communication.</span>
+                </div>
+                <div class="skills-columns">
+                    <div class="technical-skill">
+                        <h3 data-i18n="skills.technical.title">Création Web & Design</h3>
+                        <div class="skill-box">
+                            <span class="title"><i class="fa-solid fa-code"></i> <span data-i18n="skills.skill1">Développement Web : HTML, CSS, JavaScript, design responsive</span></span>
+                            <div class="skill-bar">
+                                <span class="skill-per html"></span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title"><i class="fa-brands fa-figma"></i> <span data-i18n="skills.skill2">Design UI/UX & Prototypage : Figma (wireframes, maquettes, prototypes interactifs)</span></span>
+                            <div class="skill-bar">
+                                <span class="skill-per figma"></span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title"><i class="fa-solid fa-layer-group"></i> <span data-i18n="skills.skill3">CMS & PIM : WordPress, gestion de contenu, intégration de données produits</span></span>
+                            <div class="skill-bar">
+                                <span class="skill-per concp"></span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title"><i class="fa-solid fa-palette"></i> <span data-i18n="skills.skill4">Création de Contenu Visuel & Digital : Canva, moodboards, visuels réseaux sociaux</span></span>
+                            <div class="skill-bar">
+                                <span class="skill-per css"></span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title"><i class="fa-solid fa-database"></i> <span data-i18n="skills.skill5">Gestion de Bases de Données : SQL, administration et requêtes de base</span></span>
+                            <div class="skill-bar">
+                                <span class="skill-per sql"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-skill">
+                        <h3 data-i18n="skills.organisation.title">Organisation & Collaboration</h3>
+                        <div class="personal-tags">
+                            <span data-i18n="skills.org1">Agile (Scrum/Kanban)</span>
+                            <span>Jira</span>
+                            <span>Notion</span>
+                            <span>Slack</span>
+                            <span data-i18n="skills.org2">Communication client</span>
+                            <span data-i18n="skills.org3">Coordination d'équipe</span>
+                        </div>
+                        <h3 style="margin-top:32px;" data-i18n="skills.personal.title">Qualités Personnelles</h3>
+                        <div class="personal-tags">
+                            <span data-i18n="skills.p1">Adaptabilité</span>
+                            <span data-i18n="skills.p2">Autonomie & Initiative</span>
+                            <span data-i18n="skills.p3">Créativité & Résolution de Problèmes</span>
+                            <span data-i18n="skills.p4">Communication & Travail d'Équipe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-strip">
+                    <div class="tech-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                    <div class="tech-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                    <div class="tech-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                    <div class="tech-item"><i class="fa-brands fa-figma"></i> Figma</div>
+                    <div class="tech-item"><i class="fa-brands fa-wordpress"></i> WordPress</div>
+                    <div class="tech-item"><i class="fa-solid fa-database"></i> SQL</div>
+                    <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+                    <div class="tech-item"><i class="fa-brands fa-github"></i> GitHub</div>
+                </div>
+            </section>
+
             <!---Projects box-->
             <section class="section" id="Projects">
-  <div class="top-header">
-      <h1>Projects</h1>
-  </div>
-  <div class="portfolio-grid">
+                <div class="top-header">
+                    <span class="section-tag" data-i18n="projects.tag">Portfolio</span>
+                    <h1 data-i18n-html="projects.heading">Projets <span class="gradient-text">Sélectionnés</span></h1>
+                    <span class="section-subtitle" data-i18n="projects.subtitle">Sites web — conçus et développés par mes soins. Cliquez sur un aperçu pour naviguer sur le site en direct.</span>
+                </div>
 
-      <!-- Projet 1 -->
-      <div class="project-card">
-        <img src="festival_pre.png" alt="Festival Cultures Urbaines">
-        <div class="overlay">
-          <h3>Festival Cultures Urbaines</h3>
-          <a href="project-festival.html" class="btn">See more details</a>
-        </div>
-      </div>
-                  <!-- Projet 4 -->
-      <div class="project-card">
-        <img src="patrimonex.png" alt="Patrimonex">
-        <div class="overlay">
-          <h3>Patrimonex</h3>
-          <a href="gestion_patrimoine.html" class="btn">See more details</a>
-        </div>
-      </div>
+                <div class="projects-spotlight">
 
-      <!-- Projet 2 -->
-      <div class="project-card">
-        <img src="calmapp.png" alt="CalmCup App">
-        <div class="overlay">
-          <h3>CalmCup</h3>
-          <a href="project-calmcup.html" class="btn">See more details</a>
-        </div>
-      </div>
+                    <!-- Projet 1 : Aurelia Estates -->
+                    <div class="spotlight-row">
+                        <div class="spotlight-visual" style="--spotlight-glow: linear-gradient(135deg, #c9a876, #6b5636);">
+                            <a href="project-aurelia.html" class="frame-link">
+                                <div class="browser-frame">
+                                    <div class="browser-bar">
+                                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                        <span class="browser-url">aurelia-estates.com</span>
+                                    </div>
+                                    <div class="browser-body"><iframe src="site-aurelia.html" title="Aurelia Estates live preview" loading="lazy"></iframe></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="spotlight-content">
+                            <span class="spotlight-number">01</span>
+                            <div class="project-eyebrow" data-i18n="project1.eyebrow">Web Design & Front-End</div>
+                            <h3 data-i18n="project1.title">Aurelia Estates — Site Immobilier</h3>
+                            <p data-i18n="project1.desc">Un site web pour un studio immobilier & design d'intérieur haut de gamme — palette sombre et éditoriale, typographie serif et une vitrine complète de biens.</p>
+                            <div class="spotlight-tools">
+                                <span>HTML/CSS/JS</span><span data-i18n="project1.tag2">Design Responsive</span><span data-i18n="project1.tag3">Vraies Photographies</span>
+                            </div>
+                            <a href="project-aurelia.html" class="project-link"><span data-i18n="projects.view_case_study">Voir l'étude de cas</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
 
-      <!-- Projet 3 -->
-      <div class="project-card">
-        <img src="flappybird.jpg" alt="Flappy Bird Game">
-        <div class="overlay">
-          <h3>Flappy Bird Game</h3>
-          <a href="https://houdataleb.github.io/FLAPPY-BIRD-GAME/" class="btn">See more details</a>
-        </div>
-      </div>
+                    <!-- Projet 2 : Solène -->
+                    <div class="spotlight-row reverse">
+                        <div class="spotlight-visual" style="--spotlight-glow: linear-gradient(135deg, #c23a30, #1a1a1a);">
+                            <a href="project-solene.html" class="frame-link">
+                                <div class="browser-frame">
+                                    <div class="browser-bar">
+                                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                        <span class="browser-url">solene-studio.com</span>
+                                    </div>
+                                    <div class="browser-body"><iframe src="site-solene.html" title="Solène live preview" loading="lazy"></iframe></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="spotlight-content">
+                            <span class="spotlight-number">02</span>
+                            <div class="project-eyebrow" data-i18n="project2.eyebrow">Web Design & Front-End</div>
+                            <h3 data-i18n="project2.title">Solène — Site de Marque de Mode</h3>
+                            <p data-i18n="project2.desc">Un site web pour une marque de mode indépendante — typographie imposante, palette rouge et noir profonde et grille de lookbook éditoriale décalée.</p>
+                            <div class="spotlight-tools">
+                                <span>HTML/CSS/JS</span><span data-i18n="project2.tag2">Mise en Page Éditoriale</span><span data-i18n="project2.tag3">Vraies Photographies</span>
+                            </div>
+                            <a href="project-solene.html" class="project-link"><span data-i18n="projects.view_case_study">Voir l'étude de cas</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
 
+                    <!-- Projet 3 : Meridian -->
+                    <div class="spotlight-row">
+                        <div class="spotlight-visual" style="--spotlight-glow: linear-gradient(135deg, #2f6fe0, #0f1f3d);">
+                            <a href="project-meridian.html" class="frame-link">
+                                <div class="browser-frame">
+                                    <div class="browser-bar">
+                                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                        <span class="browser-url">meridian-eng.com</span>
+                                    </div>
+                                    <div class="browser-body"><iframe src="site-meridian.html" title="Meridian live preview" loading="lazy"></iframe></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="spotlight-content">
+                            <span class="spotlight-number">03</span>
+                            <div class="project-eyebrow" data-i18n="project3.eyebrow">Web Design & Front-End</div>
+                            <h3 data-i18n="project3.title">Meridian — Site Corporate d'Ingénierie</h3>
+                            <p data-i18n="project3.desc">Un site corporate pour une entreprise d'ingénierie & d'infrastructure — palette bleu marine et orange, grille de services et bandeau de chiffres clés pour inspirer confiance.</p>
+                            <div class="spotlight-tools">
+                                <span>HTML/CSS/JS</span><span data-i18n="project3.tag2">Design Corporate</span><span data-i18n="project3.tag3">Vraies Photographies</span>
+                            </div>
+                            <a href="project-meridian.html" class="project-link"><span data-i18n="projects.view_case_study">Voir l'étude de cas</span> <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
 
-  </div>
-</section>
+                </div>
+            </section>
 
             <!---Contact box-->
             <section class="section" id="contact">
                 <div class="top-header">
-                    <h1>Let's Work Together</h1>
-                    <span>Do you have a project in your mind, contact me here</span>
+                    <span class="section-tag" data-i18n="contact.tag">Contact</span>
+                    <h1 data-i18n-html="contact.heading">Construisons quelque chose de <span class="gradient-text">formidable ensemble</span></h1>
+                    <span class="section-subtitle" data-i18n="contact.subtitle">Un projet de site web ou de design en tête ? Parlons-en.</span>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="contact-info">
-                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><a href="mailto:talebnourelhouda22@gmail.com"><i class="uil uil-envelope">talebnourelhouda22@gmail.com</i></a></i></p>
-                            <p><i class="uil uil-phone"></i>Phone : 0640092782</p>
+                            <h2><span data-i18n="contact.find_me">Me trouver</span> <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i><a href="mailto:talebnourelhouda22@gmail.com">talebnourelhouda22@gmail.com</a></p>
+                            <p><i class="uil uil-phone"></i><span data-i18n="contact.phone">Téléphone : 06 40 09 27 82</span></p>
+                            <p><i class="fa-solid fa-briefcase"></i><span data-i18n="hero.badge">Ouverte aux missions freelance et aux stages</span></p>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col">
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Your Name">
-                                <input type="text" class="input-field" placeholder="Your Email">
+                                <input type="text" class="input-field" placeholder="Votre nom" data-i18n-placeholder="contact.form.name">
+                                <input type="email" class="input-field" placeholder="Votre email" data-i18n-placeholder="contact.form.email">
                             </div>
                             <div class="text-area">
-                                <input type="text" class="input-subject" placeholder="Subject">
-                                <textarea placeholder="Message"></textarea>
+                                <input type="text" class="input-subject" placeholder="Sujet" data-i18n-placeholder="contact.form.subject">
+                                <textarea placeholder="Message" data-i18n-placeholder="contact.form.message"></textarea>
                             </div>
                             <div class="form-button">
-                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                                <button class="btn"><span data-i18n="contact.form.send">Envoyer</span> <i class="uil uil-message"></i></button>
                             </div>
                         </div>
                     </div>
@@ -281,32 +375,35 @@ I am particularly interested in digital project management, user experience, and
             <div class="middle-footer">
                 <ul class="footer-menu">
                     <li class="footer_menu_list">
-                        <a href="#home">Home</a>
+                        <a href="#home" data-i18n="nav.home">Accueil</a>
                     </li>
                     <li class="footer_menu_list">
-                        <a href="#about">About</a>
+                        <a href="#about" data-i18n="nav.about">À propos</a>
                     </li>
                     <li class="footer_menu_list">
-                        <a href="#Projects">Projects</a>
+                        <a href="#skills" data-i18n="nav.skills">Compétences</a>
                     </li>
                     <li class="footer_menu_list">
-                        <a href="#contact">Contact</a>
+                        <a href="#Projects" data-i18n="nav.projects">Projets</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact" data-i18n="nav.contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-social-icons"> 
+            <div class="footer-social-icons">
                 <div class="icon_circle_footer">
-                        <div class="icon"><a href=""><i class="uil uil-instagram"></i></a></div>
                         <div class="icon"><a href="https://www.linkedin.com/in/taleb-nour-el-houda-7548b6290/"><i class="uil uil-linkedin-alt"></i></a></div>
                         <div class="icon"><a href="https://github.com/HoudaTaleb"><i class="uil uil-github-alt"></i></a></div>
-                        <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                        <div class="icon"><a href="mailto:talebnourelhouda22@gmail.com"><i class="uil uil-envelope"></i></a></div>
                 </div>
             </div>
             <div class="bottom-footer">
-                <p >Copyright &copy; <a href="#home" style="text-decoration: none; color: rgb(71, 151, 255) ;">By Nour</a> - All rights reserved 2024</p>
+                <p data-i18n-html="footer.copyright">Copyright &copy; <a href="#home" style="text-decoration: none; color: rgb(71, 151, 255);">Nour Taleb</a> — Tous droits réservés 2026</p>
             </div>
         </footer>
     </div>
+    <div class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive-nav.js/1.0.39/responsive-nav.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>

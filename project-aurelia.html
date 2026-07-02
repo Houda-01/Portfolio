@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Estates — Real Estate Website | Nour Taleb</title>
+    <link rel="icon" type="image/png" href="logo-h.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <img src="logo-h.png" alt="Nour Taleb logo" class="logo-mark">
+                <p>Nour<span>.</span></p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list"><a href="index.html" class="nav-link" data-i18n="nav.home">Accueil</a></li>
+                    <li class="nav_list"><a href="index.html#about" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                    <li class="nav_list"><a href="index.html#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                    <li class="nav_list"><a href="index.html#Projects" class="nav-link active-link" data-i18n="nav.projects">Projets</a></li>
+                    <li class="nav_list"><a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mode">
+                <div class="lang-switch">
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="moon-sun" id="toogle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+
+            <section class="cs-hero" style="--cs-gradient: linear-gradient(135deg, #3b2f1e 0%, #8a6a3a 100%);">
+                <div class="cs-blob cs-blob-1"></div>
+                <div class="cs-blob cs-blob-2"></div>
+                <div class="cs-hero-inner">
+                    <span class="cs-tag" data-i18n="cs.aurelia.tag">Web Design & Front-End · Site Web Réel et Codé</span>
+                    <h1 data-i18n="cs.aurelia.title">Aurelia Estates — Site Immobilier</h1>
+                    <p class="cs-subtitle" data-i18n="cs.aurelia.subtitle">Un site web une page entièrement conçu et codé pour un studio immobilier & design d'intérieur haut de gamme — construit de A à Z en HTML, CSS et JavaScript, en direct et navigable ci-dessous.</p>
+                </div>
+                <div class="cs-hero-visual">
+                    <div class="browser-frame">
+                        <div class="browser-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="browser-url">aurelia-estates.com</span>
+                        </div>
+                        <div class="browser-body"><iframe src="site-aurelia.html" title="Aurelia Estates live preview" loading="lazy"></iframe></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cs-meta-bar">
+                <div class="cs-meta-chip"><span class="cs-meta-label" data-i18n="cs.meta.role_label">Rôle</span><span class="cs-meta-value" data-i18n="cs.meta.role_value">Conception & Développement Web</span></div>
+                <div class="cs-meta-chip"><span class="cs-meta-label" data-i18n="cs.meta.timeline_label">Durée</span><span class="cs-meta-value" data-i18n="cs.aurelia.timeline_value">Réalisé en 3 semaines</span></div>
+                <div class="cs-meta-chip"><span class="cs-meta-label" data-i18n="cs.meta.tools_label">Outils</span><span class="cs-meta-value">HTML · CSS · JS</span></div>
+                <div class="cs-meta-chip"><span class="cs-meta-label" data-i18n="cs.meta.type_label">Type</span><span class="cs-meta-value" data-i18n="cs.meta.type_value">Projet Personnel</span></div>
+            </div>
+
+            <div class="cs-block" style="text-align:center; margin-bottom:100px;">
+                <a href="site-aurelia.html" target="_blank" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-i18n="cs.visit_live">Voir le site en direct</span></a>
+            </div>
+
+            <div class="cs-block cs-goal">
+                <div class="cs-goal-grid">
+                    <div class="cs-goal-card">
+                        <div class="cs-icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h3 data-i18n="cs.challenge_title">Le Défi</h3>
+                        <p data-i18n="cs.aurelia.challenge">Les sites immobiliers noient souvent de belles propriétés sous des mises en page trop chargées. L'objectif était un site calme et éditorial qui laisse la photographie et les biens parler d'eux-mêmes.</p>
+                    </div>
+                    <div class="cs-goal-card">
+                        <div class="cs-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3 data-i18n="cs.approach_title">L'Approche</h3>
+                        <p data-i18n="cs.aurelia.approach">J'ai choisi une palette sombre et chaleureuse avec une typographie serif pour un rendu premium, construit un hero photographique plein cadre, et gardé une idée claire par section.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cs-block cs-process">
+                <div class="cs-block-head">
+                    <h2 data-i18n="cs.process_heading">Du brief à la mise en ligne</h2>
+                    <p data-i18n="cs.aurelia.process_subtitle">Les quatre étapes suivies pour faire passer Aurelia Estates du concept à un site codé et en ligne.</p>
+                </div>
+                <div class="cs-process-steps">
+                    <div class="cs-step">
+                        <div class="cs-step-num">1</div>
+                        <h4 data-i18n="cs.aurelia.step1.title">Recherche</h4>
+                        <p data-i18n="cs.aurelia.step1.desc">Étude de sites immobiliers et hôteliers haut de gamme pour le rythme, la typographie et le traitement photo.</p>
+                    </div>
+                    <div class="cs-step">
+                        <div class="cs-step-num">2</div>
+                        <h4 data-i18n="cs.aurelia.step2.title">Wireframe</h4>
+                        <p data-i18n="cs.aurelia.step2.desc">Structuration de la page comme un parcours : hero, crédibilité (chiffres), biens, philosophie, contact.</p>
+                    </div>
+                    <div class="cs-step">
+                        <div class="cs-step-num">3</div>
+                        <h4 data-i18n="cs.aurelia.step3.title">Design Visuel</h4>
+                        <p data-i18n="cs.aurelia.step3.desc">Définition de la palette, de l'association serif/sans-serif et d'un composant de carte de bien réutilisable.</p>
+                    </div>
+                    <div class="cs-step">
+                        <div class="cs-step-num">4</div>
+                        <h4 data-i18n="cs.step4.title">Développement & Lancement</h4>
+                        <p data-i18n="cs.step4.desc">Page responsive entièrement codée à la main en HTML/CSS/JS, avec des animations au scroll.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cs-block cs-showcase">
+                <div class="cs-block-head">
+                    <h2 data-i18n="cs.showcase_heading">Aperçu des écrans clés</h2>
+                    <p data-i18n="cs.aurelia.showcase_subtitle">Un aperçu détaillé des biens en vente et des photos d'intérieur utilisées sur le site.</p>
+                </div>
+                <div class="cs-showcase-grid two-up">
+                    <div class="cs-showcase-item"><img src="aurelia-bedroom.jpg" alt="Aurelia Estates luxury bedroom listing photo"></div>
+                    <div class="cs-showcase-item"><img src="aurelia-interior.jpg" alt="Aurelia Estates modern home interior photo"></div>
+                </div>
+            </div>
+
+            <div class="cs-block cs-next">
+                <a href="project-solene.html" class="cs-next-card">
+                    <div>
+                        <span class="cs-next-label" data-i18n="cs.next_label">Projet Suivant</span>
+                        <h3 data-i18n="cs.aurelia.next_title">Solène — Site de Marque de Mode</h3>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div style="text-align:center; margin-top:24px;">
+                    <a href="index.html#Projects" class="btn btn-outline" data-i18n="cs.back_btn">← Retour au Portfolio</a>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list"><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+                    <li class="footer_menu_list"><a href="index.html#about" data-i18n="nav.about">À propos</a></li>
+                    <li class="footer_menu_list"><a href="index.html#skills" data-i18n="nav.skills">Compétences</a></li>
+                    <li class="footer_menu_list"><a href="index.html#Projects" data-i18n="nav.projects">Projets</a></li>
+                    <li class="footer_menu_list"><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon_circle_footer">
+                    <div class="icon"><a href="https://www.linkedin.com/in/taleb-nour-el-houda-7548b6290/"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <div class="icon"><a href="https://github.com/HoudaTaleb"><i class="uil uil-github-alt"></i></a></div>
+                    <div class="icon"><a href="mailto:talebnourelhouda22@gmail.com"><i class="uil uil-envelope"></i></a></div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p data-i18n-html="footer.copyright.sub">Copyright &copy; <a href="index.html" style="color: rgb(71, 151, 255);">Nour Taleb</a> — Tous droits réservés 2026</p>
+            </div>
+        </footer>
+    </div>
+    <div class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/responsive-nav.js/1.0.39/responsive-nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
